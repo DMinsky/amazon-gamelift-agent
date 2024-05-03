@@ -1,3 +1,8 @@
+## WARNING
+Do not use this in production! Instead, use [original agent](https://github.com/aws/amazon-gamelift-agent) from Amazon.
+The purpose of this fork is to enable compatibility with various server machines. So you could run it 
+on your own VPS/Bare Metal. This is because the original agent depends on Amazon Linux EC2 instances.
+
 ## GameLiftAgent
 GameLiftAgent is a Java application that is used to launch game server processes on Amazon GameLift fleets.
 
