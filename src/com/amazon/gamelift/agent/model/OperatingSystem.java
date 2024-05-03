@@ -109,7 +109,7 @@ public enum OperatingSystem {
         } else if (SystemUtils.IS_OS_LINUX && SystemUtils.OS_VERSION.contains(AMAZON_LINUX_2023_VERSION)) {
             operatingSystem = AMAZON_LINUX_2023;
         } else {
-            operatingSystem = INVALID;
+            operatingSystem = AMAZON_LINUX_2;
         }
 
         return operatingSystem;

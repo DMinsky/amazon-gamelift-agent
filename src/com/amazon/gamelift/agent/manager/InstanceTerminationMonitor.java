@@ -57,8 +57,8 @@ public class InstanceTerminationMonitor {
     @VisibleForTesting
     protected void run() {
         try {
-            final Instant terminationTime = terminationNoticeReader.getTerminationNoticeFromLocalFile()
-                    .orElse(terminationNoticeReader.getTerminationNoticeFromEC2Metadata().orElse(null));
+            final Instant terminationTime = terminationNoticeReader.getTerminationNoticeFromLocalFile().orElse(null);
+                    //.orElse(terminationNoticeReader.getTerminationNoticeFromEC2Metadata().orElse(null));
 
             if (terminationTime == null) {
                 return;

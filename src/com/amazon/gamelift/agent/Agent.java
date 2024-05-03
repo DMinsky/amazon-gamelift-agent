@@ -62,7 +62,7 @@ public class Agent {
     public void start() throws Exception {
         try {
             // Get a snapshot of the host metadata to assist with debugging
-            EnvironmentHelper.logEC2Metadata();
+//            EnvironmentHelper.logEC2Metadata();
 
             log.info("Initializing Websocket connection and starting async threads");
             connectionManager.connect();
